@@ -34,8 +34,10 @@ digitP.addEventListener("click",function(event){
 
 })
 function checkPin(){
-    var input = document.getElementById("genaratePin").value=getPin();
+    var input = document.getElementById("inputPgenarator").value;
     var typeI = document.getElementById("btngroup").value;
+    console.log(typeI);
+    console.log(input);
     if(input === typeI){
 console.log("✅ Pin Matched... Secret door is opening for you");
   document.getElementById("out").style.display = 'block';
